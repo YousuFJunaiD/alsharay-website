@@ -1,0 +1,7 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="36" fill="#6D1620"/>
+  <circle cx="160" cy="150" r="82" stroke="#C59A41" stroke-width="12"/>
+  <path d="M160 84L176.2 133.9H228.7L186.25 164.7L202.45 214.6L160 183.8L117.55 214.6L133.75 164.7L91.3 133.9H143.8L160 84Z" fill="#C59A41"/>
+  <rect x="82" y="236" width="156" height="18" rx="9" fill="#C59A41"/>
+  <text x="160" y="285" text-anchor="middle" fill="#FFF7E8" font-size="24" font-family="Georgia, serif">AL-SHARAY</text>
+</svg>

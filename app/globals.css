@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --color-maroon: #5b1018;
+  --color-maroon-strong: #701521;
+  --color-maroon-dark: #3f0a11;
+  --color-gold: #c39a3d;
+  --color-gold-soft: #e4c57d;
+  --color-cream: #f5ede1;
+  --color-ivory: #fbf4e8;
+  --color-offwhite: #fffdfa;
+  --color-charcoal: #1c1715;
+  --color-charcoal-soft: #322927;
+  --color-muted: #625651;
+  --color-border: rgba(91, 16, 24, 0.14);
+  --color-border-strong: rgba(195, 154, 61, 0.36);
+  --shadow-card: 0 22px 50px rgba(42, 25, 19, 0.08);
+  --shadow-soft: 0 12px 30px rgba(42, 25, 19, 0.06);
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --font-script: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-offwhite);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  background-image:
+    radial-gradient(circle at top left, rgba(195, 154, 61, 0.07), transparent 24%),
+    linear-gradient(180deg, rgba(251, 244, 232, 0.78) 0%, rgba(255, 253, 250, 1) 22%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+p,
+li,
+input,
+textarea,
+button,
+a,
+label,
+span {
+  font-family: var(--font-body);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+main {
+  position: relative;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(195, 154, 61, 0.025) 50%, transparent 100%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent 30%);
+}
+
+::selection {
+  background: rgba(109, 22, 32, 0.16);
+}
+
+.gold-divider {
+  position: relative;
+}
+
+.gold-divider::after {
+  content: "";
+  display: block;
+  width: 88px;
+  height: 1px;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.header-panel {
+  background: rgba(255, 251, 245, 0.95);
+  backdrop-filter: blur(18px);
+}
+
+@media (min-width: 1280px) {
+  .header-nav-shadow {
+    box-shadow: 0 14px 32px rgba(26, 16, 12, 0.05);
+  }
+}

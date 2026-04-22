@@ -36,76 +36,76 @@ export default function HomePage() {
     <>
       <HeroSection />
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <StatsStrip stats={heroContent.metrics} />
       </SectionContainer>
 
-      <SectionContainer className="py-8">
+      <SectionContainer className="py-10 sm:py-12 lg:py-8">
         <SectionHeading
           eyebrow="Why Al Sharay"
           title="A disciplined institution with academic seriousness, values, and visible outcomes."
           description="Every section is refined to feel closer to the crest itself: dignified maroon, thoughtful gold detail, and a formal academic rhythm."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           {whyAlSharay.map((item) => (
             <StudentSupportCard key={item.title} {...item} />
           ))}
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="Academic Excellence"
           title="Results remain one of the institution's most powerful public signatures."
           description="The results presentation now uses a more ceremonial academic language with stronger merit surfaces, richer hierarchy, and dignified emphasis."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           <ResultHighlightCard label="96% & Above" value="007" />
           <ResultHighlightCard label="85% to 90%" value="073" />
           <ResultHighlightCard label="100 / 100" value="021" />
         </div>
-        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 lg:grid-cols-3">
           <TopperCard name="Bibi Safya" score="District Topper" note="Featured from the 2025 result showcase with a polished merit presentation." />
           <TopperCard name="Syeda Amtul R." score="587 - 97.83%" note="A top featured achiever from the documented 2024 performance set." />
           <TopperCard name="Future Doctors Batch" score="NEET 2025" note="A dedicated results pathway for medical aspirants and NEET achievers." />
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="Academics"
           title="Programs shaped by rigor, guidance, and steady progression."
           description="The academic system is presented with stronger institutional polish while keeping the tone formal, readable, and parent-friendly."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           {academicPrograms.map((program) => (
             <AcademicProgramCard key={program.title} {...program} />
           ))}
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="Facilities & Campus Life"
           title="A balanced campus experience designed to support serious learning."
           description="Facilities, residential support, and student spaces now sit within a warmer and more cohesive institutional visual system."
         />
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
           {facilities.map((facility) => (
             <FacilityCard key={facility.title} {...facility} />
           ))}
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
-        <div className="grid gap-8 lg:grid-cols-2">
+      <SectionContainer className="py-12 sm:py-16">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
           <div>
             <SectionHeading
               eyebrow="Hostel Support"
               title="Residential care that complements discipline, safety, and academic focus."
               description="The hostel and NRI hostel pages are now framed with greater parental confidence, clearer hierarchy, and a more refined institutional tone."
             />
-            <div className="mt-8 grid gap-4">
+            <div className="mt-6 grid gap-4 sm:mt-8">
               <StudentSupportCard
                 title="Structured routines"
                 description="Residential support designed around study rhythm, wellbeing, and dependable daily structure."
@@ -116,7 +116,7 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <div className="rounded-[34px] border border-[var(--color-border-strong)] bg-white p-6 shadow-[var(--shadow-soft)]">
+          <div className="rounded-[28px] border border-[var(--color-border-strong)] bg-white p-4 shadow-[var(--shadow-soft)] sm:rounded-[34px] sm:p-6">
             <Image
               src="/images/campus-placeholder.svg"
               alt="Hostel and student support placeholder"
@@ -128,46 +128,46 @@ export default function HomePage() {
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="News & Announcements"
           title="Timely updates with a more dignified editorial structure."
           description="The announcements zone is refined to feel institutionally trustworthy rather than crowded or promotional."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           {announcements.map((announcement) => (
             <AnnouncementCard key={announcement.title} {...announcement} />
           ))}
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="Events & Memories"
           title="Institutional moments presented with dignity, memory, and warmth."
           description="From excellence awards to fest memories, the structure now supports a more archival and ceremonial presentation."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           {eventHighlights.map((event) => (
             <EventCard key={event.title} {...event} />
           ))}
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
-        <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
+      <SectionContainer className="py-12 sm:py-16">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div>
             <SectionHeading
               eyebrow="Benefaction"
               title="A benefaction experience shaped by mission, trust, and educational purpose."
               description="These pages support educational philanthropy with stronger formal language, cleaner surfaces, and a more premium institutional feel."
             />
-            <div className="mt-8 space-y-4">
+            <div className="mt-6 space-y-4 sm:mt-8">
               {benefactionPrograms.map((program) => (
                 <Link
                   key={program.href}
                   href={program.href}
-                  className="block rounded-[26px] border border-[var(--color-border-strong)] bg-white p-5 shadow-[var(--shadow-soft)] transition hover:-translate-y-1"
+                  className="block rounded-[22px] border border-[var(--color-border-strong)] bg-white p-4 shadow-[var(--shadow-soft)] transition hover:-translate-y-1 sm:rounded-[26px] sm:p-5"
                 >
                   <h3 className="text-xl font-semibold text-[var(--color-charcoal)]">
                     {program.title}
@@ -190,13 +190,13 @@ export default function HomePage() {
         </div>
       </SectionContainer>
 
-      <SectionContainer className="py-16">
+      <SectionContainer className="py-12 sm:py-16">
         <SectionHeading
           eyebrow="Contact"
           title="Clear access to the campus, admissions team, and institutional contacts."
           description="The contact experience is now organized with greater confidence, stronger hierarchy, and better visual consistency."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-3">
           <ContactInfoCard
             title="Main Branch"
             lines={[contactDetails.address, `Office: ${contactDetails.officePhone}`]}

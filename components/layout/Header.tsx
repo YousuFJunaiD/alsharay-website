@@ -11,24 +11,24 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40">
       <div className="border-b border-[rgba(195,154,61,0.2)] bg-[rgba(255,251,245,0.96)] shadow-[0_12px_28px_rgba(26,16,12,0.08)] backdrop-blur-xl">
-        <SectionContainer className="grid items-center gap-6 py-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:py-5">
-          <Link href="/" className="flex min-w-0 items-center gap-4 lg:gap-5">
+        <SectionContainer className="grid items-center gap-4 py-3 sm:gap-5 sm:py-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:gap-6 xl:py-5">
+          <Link href="/" className="flex min-w-0 items-center gap-3 sm:gap-4 lg:gap-5">
             <Image
               src={siteConfig.logoPath}
               alt="Al Sharay logo"
               width={96}
               height={96}
-              className="h-16 w-16 object-contain sm:h-20 sm:w-20"
+              className="h-14 w-14 object-contain sm:h-16 sm:w-16 lg:h-20 lg:w-20"
               priority
             />
             <div className="min-w-0">
-              <p className="font-serif text-[1.7rem] leading-none text-[var(--color-maroon)] sm:text-[2rem]">
+              <p className="font-serif text-[1.35rem] leading-none text-[var(--color-maroon)] sm:text-[1.7rem] lg:text-[2rem]">
                 {siteConfig.shortName}
               </p>
-              <p className="mt-1 text-[10px] uppercase tracking-[0.3em] text-[var(--color-muted)] sm:text-xs">
+              <p className="mt-1 text-[9px] uppercase tracking-[0.22em] text-[var(--color-muted)] sm:text-[10px] sm:tracking-[0.3em] lg:text-xs">
                 PU College of Science
               </p>
-              <p className="mt-1 hidden font-script text-lg leading-none text-[var(--color-gold)] sm:block">
+              <p className="mt-1 hidden font-script text-base leading-none text-[var(--color-gold)] sm:block lg:text-lg">
                 {siteConfig.tagline}
               </p>
             </div>
